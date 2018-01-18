@@ -1,0 +1,61 @@
+{
+  "name": "react-dispatchor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/eventDispatcher.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/redcatjs/react-dispatchor.git"
+  },
+  "keywords": [
+    "react",
+    "dispatcher",
+    "dispatchor",
+    "nestable",
+    "event",
+    "emitter"
+  ],
+  "author": "Jo <jo@redcat.ninja> (https://redcat.ninja)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/redcatjs/react-dispatchor/issues"
+  },
+  "homepage": "https://github.com/redcatjs/react-dispatchor#readme",
+  "scripts": {
+    "build": "webpack",
+    "dev": "npm run build -- --watch",
+    "prepublish": "npm run build",
+    "codestyle": "eslint app"
+  },
+  "peerDependencies": {
+    "react": "^16.2.0"
+  },
+  "dependencies": {
+    "dispatchor": "^1.3.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.2.1",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-export-extensions": "^6.22.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-3": "^6.24.1",
+    "babel-runtime": "^6.26.0",
+    "eslint": "^4.15.0",
+    "eslint-config-standard": "^11.0.0-beta.0",
+    "eslint-config-standard-react": "^5.0.0",
+    "eslint-plugin-babel": "^4.1.2",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-react": "^7.5.1",
+    "eslint-plugin-standard": "^3.0.1",
+    "standard": "^10.0.3",
+    "webpack": "^3.10.0"
+  },
+  "files": [
+    "dist"
+  ]
+}
