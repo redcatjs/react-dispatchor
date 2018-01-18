@@ -4,6 +4,8 @@ module.exports = {
   },
   output: {
     filename: 'dist/[name].js',
+    library: "react-dispatchor",
+		libraryTarget: "umd"
   },
   module: {
     rules: [
