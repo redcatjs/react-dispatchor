@@ -35,6 +35,10 @@ module.exports = {
       commonjs: 'dispatchor',
       commonjs2: 'dispatchor',
     },
+    'react-router-redux': {
+      commonjs: 'react-router-redux',
+      commonjs2: 'react-router-redux',
+    },
   },
   devtool: 'source-map'
 }

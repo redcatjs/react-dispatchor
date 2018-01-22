@@ -1,10 +1,12 @@
 import Dispatchor, { NestedDispatchor } from 'dispatchor'
 import React, { Component } from 'react'
 
+export createReducerFromObject from './createReducerFromObject'
+export dispatchorRouterRedux from './dispatchorRouterRedux'
+export createEventDispatcherMiddleWare from './dispatchorRouterRedux'
 
-export default function({
+export default function eventDispatcherHoC({
   rootDispatcher = new Dispatchor(),
-  store
 }){
   
   return function eventDispatcher(OriginalComponent, options = {}){
@@ -12,24 +14,13 @@ export default function({
     const {
       parentDispatcher = rootDispatcher,
       eventDispatcherProp = 'eventDispatcher',
-      debug = false,
     } = options
-    
       
     class EventDispatcherHoC extends Component{
       constructor(props){
         super(props)
         this.eventDispatcher = new NestedDispatchor(parentDispatcher, {
           autoEnable: false
-        })
-        this.eventDispatcher.on('*', function(type, payload){
-          if(debug){
-            console.log('event', type, payload)
-          }
-          store.dispatch({
-            type,
-            payload,
-          })
         })
       }
       componentWillMount (){

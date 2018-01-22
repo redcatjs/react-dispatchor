@@ -31,7 +31,8 @@
     "react": "^16.2.0"
   },
   "dependencies": {
-    "dispatchor": "^1.3.0"
+    "dispatchor": "^1.3.0",
+    "react-router-redux": "^4.0.8"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
