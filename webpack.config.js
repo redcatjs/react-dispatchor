@@ -1,6 +1,6 @@
 module.exports = {
   entry: {
-    'eventDispatcher': ['./src/eventDispatcher.js']
+    'eventDispatcher': ['./src/index.js']
   },
   output: {
     filename: 'dist/[name].js',
