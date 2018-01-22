@@ -2,7 +2,7 @@
   "name": "react-dispatchor",
   "version": "1.2.1",
   "description": "",
-  "main": "dist/eventDispatcher.js",
+  "main": "dist/index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/redcatjs/react-dispatchor.git"
