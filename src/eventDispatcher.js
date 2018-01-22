@@ -1,10 +1,6 @@
 import Dispatchor, { NestedDispatchor } from 'dispatchor'
 import React, { Component } from 'react'
 
-export createReducerFromObject from './createReducerFromObject'
-export dispatchorRouterRedux from './dispatchorRouterRedux'
-export createEventDispatcherMiddleWare from './dispatchorRouterRedux'
-
 export default function eventDispatcherHoC({
   rootDispatcher = new Dispatchor(),
 }){
